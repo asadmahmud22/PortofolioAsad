@@ -279,7 +279,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .tools-container .tools-box {
