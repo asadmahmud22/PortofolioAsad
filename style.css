@@ -267,7 +267,7 @@ span {
 /* tools */
 .tools {
   background: var(--bg-color);
-  background-size: 100vh;
+  background-size: 100%;
   min-height: 100vh;
 }
 
