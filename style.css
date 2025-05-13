@@ -345,14 +345,50 @@ span {
   color: var(--second-bg-color);
 }
 
-.gambargerak img {
+.gambargerak {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gambargerak .scroll-track {
+  display: inline-block;
   animation: scroll 30s linear infinite;
 }
 
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+.gambargerak img {
+  height: auto;
+  max-height: 80px;
+  max-width: 150px;
+  margin-right: 20px;
+  vertical-align: middle;
 }
+
+/* Animasi Scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsif Tambahan untuk Mobile */
+@media (max-width: 768px) {
+  .gambargerak img {
+    max-width: 100px;
+    max-height: 60px;
+    margin-right: 10px;
+  }
+
+  .gambargerak {
+    padding: 5px 0;
+  }
+}
+
 
  /* PORTOFOLIO */
 .portfolio {
